@@ -6,7 +6,7 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 23:36:42 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/27 01:31:08 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/27 01:44:52 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Zombie::Zombie(string name) {
 }
 
 Zombie::~Zombie() {
-	cout << "Destructor for Zombie named " << name << " is called." << endl;
+	cout << "Destructor for Zombie named " << this->name << " is called." << endl;
 }
 
 void Zombie::announce(void) {
