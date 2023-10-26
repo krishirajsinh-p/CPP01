@@ -6,7 +6,7 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 00:06:15 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/27 00:40:43 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/27 01:27:16 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,12 @@ int main(void) {
 	cout << "Zombie name: " << flush;
 	cin >> name;
 	randomChump(name);
-	
+
+	cout << endl;
+
 	cout << "Creating zombie on the heap." << endl;
 	cout << "Zombie name: " << flush;
 	cin >> name;
-
 	Zombie *zombiPointer;
 	zombiPointer = newZombie(name);
 	zombiPointer->announce();

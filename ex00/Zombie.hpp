@@ -6,7 +6,7 @@
 /*   By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 22:29:26 by kpuwar            #+#    #+#             */
-/*   Updated: 2023/10/27 00:38:22 by kpuwar           ###   ########.fr       */
+/*   Updated: 2023/10/27 01:31:29 by kpuwar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,11 @@ using std::string;
 
 class Zombie {
 	private:
-		string name;
+		const string name;
 
 	public:
+		Zombie(string name);
 		~Zombie();
-		void setName(string name);
-		const string& getName(void);
 		void announce(void);
 };
 
