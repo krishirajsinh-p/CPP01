@@ -6,27 +6,26 @@
 #    By: kpuwar <kpuwar@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/26 22:24:56 by kpuwar            #+#    #+#              #
-#    Updated: 2023/10/27 02:34:48 by kpuwar           ###   ########.fr        #
+#    Updated: 2023/10/27 02:46:05 by kpuwar           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Zombie
+NAME = Brain
 
 CC = c++
 CFLAGS = -Wextra -Wall -Werror -std=c++98
 
-INCLUDES = Zombie.hpp
-SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRCS = main.cpp
 OBJS = ${SRCS:.cpp=.o}
 
 RM = rm -rf
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(INCLUDES)
+$(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(SRCS) -o $(NAME)
 
-%.o: %.cpp $(INCLUDES)
+%.o: %.cpp
 	${CC} ${CFLAGS} -c $< -o $@
 
 clean:
